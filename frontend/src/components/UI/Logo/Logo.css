@@ -1,0 +1,23 @@
+.Logo {
+    display: inline-block;
+    width: 82px;
+    height: 42px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+    .Logo {
+        width: 62px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .Logo {
+        width: 82px;
+        height: 42px;
+    }
+}

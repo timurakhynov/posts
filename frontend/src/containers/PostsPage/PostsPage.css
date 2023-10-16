@@ -1,0 +1,54 @@
+.PostsPage-container {
+    position: relative;
+}
+
+.PostsPage-background {
+    width: 100%;
+    min-height: calc(100vh - 67px);
+    margin: 0 auto;
+    background-color: rgb(90, 77, 90);
+}
+
+.PostsPage-flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.PostsPage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.PostsPage-title {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.PostsPage-error-text {
+    color: #f37c7c;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+    .PostsPage-column {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .PostsPage-column {
+        width: 920px;
+    }
+}

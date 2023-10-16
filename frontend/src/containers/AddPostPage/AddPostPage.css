@@ -1,0 +1,156 @@
+.AddPostPage-container {
+    position: relative;
+}
+
+.AddPostPage-background {
+    width: 100%;
+    min-height: calc(100vh - 67px);
+    margin: 0 auto;
+    background-color: rgb(90, 77, 90);
+}
+
+.AddPostPage-flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.AddPostPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.AddPostPage-form-column {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid rgb(180, 180, 180);
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.AddPostPage-title {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.7);
+}
+
+.AddPostPage-fileInput {
+    display: none;
+}
+
+.AddPostPage-fileInput-button {
+    display: inline-block;
+    padding: 5px 9px 5px 9px;
+    margin: 0;
+    border-radius: 2px;
+    background: rgb(180, 180, 180);
+    color: white;
+    border: 1px solid rgb(180, 180, 180);
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    line-height: 94%;
+}
+
+.AddPostPage-fileInput-button:hover {
+    cursor: pointer;
+    background: rgb(162, 162, 162);
+}
+
+.AddPostPage-fileInput-button-cancel {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    color: #f37c7c;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.AddPostPage-fileInput-button-cancel:hover {
+    cursor: pointer;
+    color: rgb(142, 3, 3);
+}
+
+.AddPostPage-form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.AddPostPage-label {
+    font-size: 15px;
+    color: gray;
+    font-weight: 700;
+}
+
+.AddPostPage-error-text {
+    color: #f37c7c;
+    font-weight: 700;
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.AddPostPage-input {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    line-height: 135%;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    color: #555;
+    padding: 8px;
+}
+
+.AddPostPage-textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+.AddPostPage-fileInput-label-div {
+    margin: 20px 20px 20px 0;
+}
+
+.AddPostPage-fileInput-label {
+    width: fit-content;
+}
+
+.AddPostPage-fileInput-filename {
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+    .AddPostPage-form-column {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .AddPostPage-form-column {
+        width: 500px;
+    }
+}

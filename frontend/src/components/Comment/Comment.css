@@ -1,0 +1,23 @@
+.Comment {
+    display: flex;
+    flex-direction: column;
+    background: #cbcbe1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.Comment_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Comment__author {
+    padding: 0;
+    margin: 0;
+}
+
+.Comment_accent {
+    text-transform: uppercase;
+}

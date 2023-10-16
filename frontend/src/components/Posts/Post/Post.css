@@ -1,0 +1,129 @@
+.Post-card {
+    display: flex;
+    background-color: rgb(187, 185, 193);
+    padding: 20px;
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.Post-card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.Post-img-box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    align-items: center;
+    background-color: rgba(90, 77, 90, 0.2);
+    justify-content: center;
+}
+
+.Post-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.Post-description-box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.Post-head-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Post-author {
+    color: rgb(35, 32, 35);
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.Post-time {
+    color: rgb(50, 45, 49);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+.Post-title {
+    padding-top: 20px;
+    color: rgb(50, 45, 49);
+    font-weight: 700;
+    margin: 0;
+    font-size: 20px;
+    line-height: 135%;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.Post-count {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+.Post-uppercase {
+    text-transform: uppercase;
+}
+
+.Post-card:hover {
+    background-color: rgba(50, 45, 49, 0.5);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.Post-card:hover .Post-title {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.Post-card:hover .Post-author {
+    color: white;
+    cursor: pointer;
+}
+
+.Post-card:hover .Post-time {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.Post-align-self-start {
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 320px) {
+    .Post-card-row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Post-card-row {
+        flex-direction: row;
+    }
+}
